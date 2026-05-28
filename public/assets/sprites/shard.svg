@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" shape-rendering="crispEdges">
+  <rect width="64" height="64" fill="none"/>
+  <path d="M32 5l17 24-17 30-17-30z" fill="#63c8f0"/>
+  <path d="M32 5v54L15 29z" fill="#3e94c8"/>
+  <path d="M32 5l17 24-17 5z" fill="#c7f0ff"/>
+  <path d="M32 34l17-5-17 30z" fill="#2e78ac"/>
+  <path d="M24 23h9v8h-9z" fill="#effcff" opacity=".78"/>
+  <path d="M28 13h5v7h-5z" fill="#effcff" opacity=".48"/>
+  <path d="M22 54h20v4H22z" fill="#155279" opacity=".5"/>
+</svg>

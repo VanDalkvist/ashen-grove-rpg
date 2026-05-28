@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тлеющая Роща</title>
+  </head>
+  <body>
+    <div id="app">
+      <main class="shell" aria-label="Тлеющая Роща">
+        <section class="game-surface" aria-label="Игровое поле">
+          <div id="game-root"></div>
+        </section>
+        <aside class="hud-panel" aria-label="Состояние игры">
+          <div class="hud-topline">
+            <div>
+              <p class="eyebrow">Карта приключений</p>
+              <h1>Тлеющая Роща</h1>
+            </div>
+            <button id="reset-button" class="icon-button" type="button" title="Новая игра" aria-label="Новая игра">
+              ↺
+            </button>
+          </div>
+
+          <div class="hero-card" aria-label="Герой">
+            <div class="portrait" aria-hidden="true"></div>
+            <div>
+              <span>Герой</span>
+              <strong>Рыцарь Рощи</strong>
+              <small id="army-value">Отряд: 12</small>
+            </div>
+          </div>
+
+          <div class="stats-grid" aria-label="Ход">
+            <div>
+              <span>День</span>
+              <strong id="day-value">1</strong>
+            </div>
+            <div>
+              <span>Ход</span>
+              <strong id="movement-value">24 / 24</strong>
+            </div>
+            <div>
+              <span>HP героя</span>
+              <strong id="hp-value">24 / 24</strong>
+            </div>
+            <div>
+              <span>LVL</span>
+              <strong id="level-value">1</strong>
+            </div>
+            <div>
+              <span>XP</span>
+              <strong id="xp-value">0 / 6</strong>
+            </div>
+            <div>
+              <span>Осколки</span>
+              <strong id="shards-value">0 / 3</strong>
+            </div>
+          </div>
+
+          <div class="resource-grid" aria-label="Ресурсы">
+            <div><span>Золото</span><strong id="gold-value">1200</strong></div>
+            <div><span>Дерево</span><strong id="wood-value">4</strong></div>
+            <div><span>Руда</span><strong id="ore-value">3</strong></div>
+            <div><span>Крист.</span><strong id="crystals-value">0</strong></div>
+          </div>
+
+          <div class="bar-wrap" aria-label="Здоровье">
+            <div id="hp-bar" class="bar-fill"></div>
+          </div>
+
+          <section class="quest-block" aria-label="Квест">
+            <h2>Квест</h2>
+            <p id="quest-text">Поговори со Старшей у костра.</p>
+          </section>
+
+          <section class="log-block" aria-label="Журнал">
+            <h2>Журнал</h2>
+            <ol id="log-list"></ol>
+          </section>
+
+          <section id="battle-panel" class="battle-panel" aria-label="Автобой" hidden>
+            <div>
+              <p class="eyebrow">Автобой</p>
+              <h2 id="battle-title">Страж</h2>
+            </div>
+            <div class="battle-row">
+              <span>Противник</span>
+              <strong id="enemy-hp">0 / 0</strong>
+            </div>
+            <p>Стычки решаются автоматически на карте приключений.</p>
+          </section>
+
+          <button id="end-turn-button" class="wide-command" type="button">Завершить день</button>
+
+          <div class="controls" aria-label="Управление">
+            <span>WASD / стрелки</span>
+            <span>E / Space</span>
+            <span>N</span>
+          </div>
+        </aside>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
